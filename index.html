@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-  / give overview of days lecture
   <meta charset="UTF-8">
   <title>Underscore Demo</title>
   <script type="template/html" id="imageTmpl">
     <% _.each(githubData, function(element, index, list) { %>
-
+          <%= element.name %>
+          <%= element.email %>
 
         <img style="width:200px;" src="<%= element.avatar_url %>">
 
